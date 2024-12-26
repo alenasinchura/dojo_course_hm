@@ -16,7 +16,7 @@ test('00-conduit auth flow for user that already exist in database with creating
     await page.locator('//input[@data-qa-id="editor-tags"]').fill('new_article');
     await page.locator('//button[@data-qa-id="editor-publish"]').click(); //create a new article 
 
-   await expect(page.locator('//h1[@data-qa-id="article-title"]')).toContainText('the first article ');
+   await expect(page.locator('//h1[@data-qa-id="article-title"]')).toContainText('the first article '); //verify that article exists 
 
   });
 
